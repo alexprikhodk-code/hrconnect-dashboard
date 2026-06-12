@@ -1,11 +1,11 @@
-# ПРОЕКТ AI TESTING CANDIDATES
+# AI TESTING CANDIDATES (HRconnect)
 
-Дашборд аналізу кандидатів за методологією Перформії.
+Дашборд для тестування кандидатів.
 
-**URL:** https://alexprikhodk-code.github.io/perfomia-dashboard/
-**Пароль:** Recruting (хешований у SHA-256 всередині HTML)
+**URL:** https://alexprikhodk-code.github.io/hrconnect-dashboard/
+**Пароль:** Recruting
 
-## Як оновлювати
-1. Claude генерує оновлений `index.html` у цій папці
+## Оновлення
+1. Claude генерує оновлений `index.html`
 2. Подвійний клік по `deploy.bat`
-3. Через ~30 секунд URL показує нову версію
+3. Через ~30 сек URL показує нову версію

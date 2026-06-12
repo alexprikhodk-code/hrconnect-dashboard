@@ -1,9 +1,9 @@
 ﻿============================================================
- ФІНАЛЬНІ КРОКИ
+ ФІНАЛЬНІ КРОКИ ПІСЛЯ SETUP
 ============================================================
 
 1. Відкрийте в браузері:
-   https://github.com/alexprikhodk-code/perfomia-dashboard/settings/pages
+   https://github.com/alexprikhodk-code/hrconnect-dashboard/settings/pages
 
 2. В розділі "Build and deployment":
    - Source: Deploy from a branch
@@ -14,7 +14,7 @@
 3. Зачекайте 1-2 хвилини.
 
 4. Відкрийте дашборд:
-   https://alexprikhodk-code.github.io/perfomia-dashboard/
+   https://alexprikhodk-code.github.io/hrconnect-dashboard/
 
 5. Введіть пароль: Recruting
 

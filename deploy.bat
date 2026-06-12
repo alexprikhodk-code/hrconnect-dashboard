@@ -2,10 +2,10 @@
 title Deploy dashboard
 setlocal
 
-set "URL=https://alexprikhodk-code.github.io/perfomia-dashboard/"
+set "URL=https://alexprikhodk-code.github.io/hrconnect-dashboard/"
 
 echo ============================================================
-echo  Deploy: AI TESTING CANDIDATES
+echo  Deploy: AI TESTING CANDIDATES (HRconnect)
 echo ============================================================
 cd /d "%~dp0"
 

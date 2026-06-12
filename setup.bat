@@ -3,6 +3,7 @@ title One-time setup
 setlocal
 
 set "USERNAME=alexprikhodk-code"
+set "EMAIL=alexprikhodk@gmail.com"
 set "REPO=perfomia-dashboard"
 set "REMOTE=https://github.com/%USERNAME%/%REPO%.git"
 
@@ -11,6 +12,7 @@ echo  ONE-TIME SETUP - GitHub Pages
 echo ============================================================
 echo.
 echo Username: %USERNAME%
+echo Email:    %EMAIL%
 echo Repo:     %REPO%
 echo Remote:   %REMOTE%
 echo.
@@ -22,29 +24,34 @@ pause
 cd /d "%~dp0"
 
 echo.
-echo [1/6] git init
+echo [1/8] Set git identity
+git config --global user.email "%EMAIL%"
+git config --global user.name "%USERNAME%"
+
+echo.
+echo [2/8] git init
 git init
 if errorlevel 1 goto err
 
 echo.
-echo [2/6] branch main
+echo [3/8] branch main
 git branch -M main
 
 echo.
-echo [3/6] remote add origin
+echo [4/8] remote add origin
 git remote remove origin >nul 2>&1
 git remote add origin "%REMOTE%"
 
 echo.
-echo [4/6] git add
+echo [5/8] git add
 git add -A
 
 echo.
-echo [5/6] commit
+echo [6/8] commit
 git commit -m "Initial deploy"
 
 echo.
-echo [6/6] push
+echo [7/8] push
 echo.
 echo === Login dialog will appear ===
 echo Username: %USERNAME%
@@ -53,6 +60,8 @@ echo.
 git push -u origin main
 if errorlevel 1 goto err
 
+echo.
+echo [8/8] DONE
 echo.
 echo ============================================================
 echo  SETUP OK
